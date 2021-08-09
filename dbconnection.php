@@ -17,9 +17,16 @@ class Database
 	
     public static function initialize()
     {
+		/* Set your database details*/
+		
+		$host 			= "localhost"; 		// Your host
+		$user_name 		= "root";		//User name
+		$password 		= "";				//Your password
+		$db_name 		= "network_test";	//Your password
+
         if (self::$init===TRUE)return;
         self::$init = TRUE;
-        self::$conn = new mysqli("localhost", "root", "", "network_test1");
+        self::$conn = new mysqli($host,$user_name,$password,$db_name);
     }
 }
 
