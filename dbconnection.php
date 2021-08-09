@@ -20,9 +20,9 @@ class Database
 		/* Set your database details*/
 		
 		$host 			= "localhost"; 		// Your host
-		$user_name 		= "root";		//User name
+		$user_name 		= "root";			//User name
 		$password 		= "";				//Your password
-		$db_name 		= "network_test";	//Your password
+		$db_name 		= "network_test";	//Your database
 
         if (self::$init===TRUE)return;
         self::$init = TRUE;
